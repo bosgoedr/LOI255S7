@@ -1,0 +1,47 @@
+<!--
+  Generated template for the ChatPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar hideBackButton="true">
+      <ion-title>
+          <ion-grid style="width: 100%">
+            <ion-row>
+              <ion-col style="text-align: center"><button clear ion-button icon-only (click)="Menu()"><ion-icon name="home"></ion-icon></button></ion-col>
+              <ion-col style="text-align: center"><button clear ion-button icon-only><ion-icon name="help-circle"></ion-icon></button></ion-col>
+              <ion-col style="text-align: center"><button clear ion-button icon-only><ion-icon name="contact"></ion-icon></button></ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<img height="60" src="assets/imgs/doctor.png"  style="float: right"/>
+<div class="chat-message">
+  <div class="chat-message right">
+  Goedendag Robert, waarmee kan ik je helpen?
+  </div>
+  <div class="chat-message left">
+    Hallo dr Janssen, ik heb last van mijn knie
+  </div>
+</div>
+
+</ion-content>
+
+<ion-footer>
+<ion-grid>
+  <ion-row>
+    <ion-col><img height="40" src="assets/imgs/plaatje.png" /></ion-col>
+    <ion-col col-10> 
+      <ion-item>    
+        <ion-input type="text" placeholder="stel uw vraag"></ion-input>
+        <ion-icon name="md-send" item-right></ion-icon>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-footer>

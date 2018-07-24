@@ -1,0 +1,53 @@
+<ion-header>
+
+  <ion-navbar hideBackButton="true">
+      <ion-title>
+          <ion-grid style="width: 100%">
+            <ion-row>
+              <ion-col style="text-align: center"><button clear ion-button icon-only (click)="Menu()"><ion-icon name="home"></ion-icon></button></ion-col>
+              <ion-col style="text-align: center"><button clear ion-button icon-only><ion-icon name="help-circle"></ion-icon></button></ion-col>
+              <ion-col style="text-align: center"><button clear ion-button icon-only><ion-icon name="contact"></ion-icon></button></ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+      <ion-item>
+        <ion-avatar item-start>
+           <ion-icon name="mail"></ion-icon>
+        </ion-avatar>
+        <h2>Nieuwe mail</h2>
+        <p>Dit is een test mail</p>
+        <button ion-button clear item-end>Open</button>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+             <ion-icon name="mail-open"></ion-icon>
+          </ion-avatar>
+          <h2>Gelezen mail</h2>
+          <p>Dit is een oude mail</p>
+          <button ion-button clear item-end>Open</button>
+        </ion-item>
+        <ion-item>
+            <ion-avatar item-start>
+               <ion-icon name="mail-open"></ion-icon>
+            </ion-avatar>
+            <h2>Gelezen mail</h2>
+            <p>Dit is een oude mail</p>
+            <button ion-button clear item-end>Open</button>
+          </ion-item>
+          <ion-item>
+              <ion-avatar item-start>
+                 <ion-icon name="mail-open"></ion-icon>
+              </ion-avatar>
+              <h2>Gelezen mail</h2>
+              <p>Dit is een oude mail</p>
+              <button ion-button clear item-end>Open</button>
+            </ion-item>
+    </ion-list>
+</ion-content>
