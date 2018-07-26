@@ -1,4 +1,3 @@
-import { SpoedPageModule } from './../spoed/spoed.module';
 import { SpoedPage } from './../spoed/spoed';
 //import { SpoedbelPageModule } from './../spoedbel/spoedbel.module';
 
