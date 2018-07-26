@@ -20,7 +20,7 @@ export class MedicijninfoPage {
   }
 
   ionViewDidLoad() {
-    const data = this.navParams.get('data');
+    //const data = this.navParams.get('data');
     console.log('ionViewDidLoad MedicijninfoPage');
   }
 

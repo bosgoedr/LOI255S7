@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-//pages
-import { MenuPage } from './../menu/menu';
-
 /**
  * Generated class for the DoorverwijzingPage page.
  *
@@ -20,10 +17,6 @@ export class DoorverwijzingPage {
   items: Array<string>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  Menu() {
-    this.navCtrl.push(MenuPage);
   }
 
   ngOnInit() {

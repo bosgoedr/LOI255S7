@@ -6,20 +6,11 @@
 -->
 <ion-header>
 
-  <ion-navbar hideBackButton="true">
-      <ion-title>
-          <ion-grid style="width: 100%">
-            <ion-row>
-              <ion-col style="text-align: center"><button clear ion-button icon-only (click)="Menu()"><ion-icon name="home"></ion-icon></button></ion-col>
-              <ion-col style="text-align: center"><button clear ion-button icon-only><ion-icon name="help-circle"></ion-icon></button></ion-col>
-              <ion-col style="text-align: center"><button clear ion-button icon-only><ion-icon name="contact"></ion-icon></button></ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-title>
-  </ion-navbar>
-
-</ion-header>
-
+    <ion-navbar hideBackButton="true">
+      <ion-title>Consult aanvraag</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
 <ion-content padding>
 <ion-calendar [(ngModel)]="date"
 (onChange)="onChange($event)"

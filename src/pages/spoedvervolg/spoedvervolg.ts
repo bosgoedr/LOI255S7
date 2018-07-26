@@ -1,3 +1,5 @@
+import { LokatiePage } from './../lokatie/lokatie';
+import { HuisartsPage } from './../huisarts/huisarts';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -14,6 +16,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'spoedvervolg.html',
 })
 export class SpoedvervolgPage {
+
+  huisartsClick() {
+    console.log('test');
+    this.navCtrl.push(HuisartsPage);
+  }
+
+  lokatieClick() {
+    console.log('test');
+    this.navCtrl.push(LokatiePage);
+  }
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

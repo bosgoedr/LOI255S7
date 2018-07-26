@@ -1,4 +1,9 @@
-import { MenuPage } from './../menu/menu';
+import { SpoedPageModule } from './../spoed/spoed.module';
+import { SpoedPage } from './../spoed/spoed';
+//import { SpoedbelPageModule } from './../spoedbel/spoedbel.module';
+
+import { TabsPage } from './../tabs/tabs';
+//import { MenuPage } from './../menu/menu';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
@@ -8,10 +13,18 @@ import { AlertController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
- MenuPage = MenuPage;
+ //MenuPage = MenuPage;
  
   constructor(public navCtrl: NavController,public alertCtrl: AlertController) {
 
+  }
+
+  openMenu() {
+    this.navCtrl.setRoot(TabsPage)
+  }
+
+  openSpoed() {
+    this.navCtrl.push(SpoedPage)
   }
 
   alertCode() {

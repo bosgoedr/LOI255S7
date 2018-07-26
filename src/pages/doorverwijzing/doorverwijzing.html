@@ -6,20 +6,11 @@
 -->
 <ion-header>
 
-  <ion-navbar hideBackButton="true">
-      <ion-title>
-          <ion-grid style="width: 100%">
-            <ion-row>
-              <ion-col style="text-align: center"><button clear ion-button icon-only (click)="Menu()"><ion-icon name="home"></ion-icon></button></ion-col>
-              <ion-col style="text-align: center"><button clear ion-button icon-only><ion-icon name="help-circle"></ion-icon></button></ion-col>
-              <ion-col style="text-align: center"><button clear ion-button icon-only><ion-icon name="contact"></ion-icon></button></ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-title>
-  </ion-navbar>
-
-</ion-header>
-
+    <ion-navbar hideBackButton="true">
+      <ion-title>Doorverwijzing aanvragen</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
 <ion-content>
  <ion-item><ion-input placeholder="Klachtomschrijving"></ion-input></ion-item>
   <ion-searchbar placeholder="Specialist" showCancelButton color="danger" (ionInput)="filterItems($event)"></ion-searchbar>  

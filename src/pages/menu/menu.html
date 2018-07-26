@@ -6,39 +6,29 @@
 -->
 <ion-header>
 
-  <ion-navbar hideBackButton="true">
-      <ion-title>
-          <ion-grid style="width: 100%">
-            <ion-row>
-              <ion-col style="text-align: center"><button clear ion-button icon-only><ion-icon name="home"></ion-icon></button></ion-col>
-              <ion-col style="text-align: center"><button clear ion-button icon-only><ion-icon name="help-circle"></ion-icon></button></ion-col>
-              <ion-col style="text-align: center"><button clear ion-button icon-only><ion-icon name="contact"></ion-icon></button></ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
+    <ion-navbar hideBackButton="true">
+      <ion-title>Menu</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
 <ion-content padding class="Menu">
 
 <div class="box-container" >
   <div class="box-row">
-    <div class="box-col" navPush="ChatPage"><ion-icon name="chatbubbles"></ion-icon><br>chat</div>
-    <div class="box-col" navPush="ConsultePage"><ion-icon name="calendar"></ion-icon><br>consultaanvraag</div>
+    <div class="box-col" (click)="openChat()"><ion-icon name="chatbubbles"></ion-icon><br>chat</div>
+    <div class="box-col" (click)="openConsulte()"><ion-icon name="calendar"></ion-icon><br>consultaanvraag</div>
   </div>
   <div class="box-row">
-    <div class="box-col" navPush="DoorverwijzingPage"><ion-icon name="share-alt"></ion-icon><br>Doorverwijzing</div>
-    <div class="box-col" navPush="BloedonderzoekPage"><ion-icon name="search"></ion-icon><br>bloedonderzoek</div>
+    <div class="box-col" (click)="openDoorverwijzing()"><ion-icon name="share-alt"></ion-icon><br>Doorverwijzing</div>
+    <div class="box-col" (click)="openBloedonderzoek()"><ion-icon name="search"></ion-icon><br>bloedonderzoek</div>
   </div>
   <div class="box-row">
-    <div class="box-col" navPush="BerichtenPage"><ion-icon name="filing"></ion-icon><br>Berichten</div>
-    <div class="box-col" navPush="EpdPage"><ion-icon name="clipboard"></ion-icon><br>EPD</div>
+    <div class="box-col" (click)="openBerichten()"><ion-icon name="filing"></ion-icon><br>Berichten</div>
+    <div class="box-col" (click)="openEpd()"><ion-icon name="clipboard"></ion-icon><br>EPD</div>
   </div>
   <div class="box-row">
-    <div class="box-col" navPush="MedicijnenPage"><ion-icon name="medkit"></ion-icon><br>Mijn medicijnen</div>
-    <div class="box-col" navPush="SpoedPage"><ion-icon name="help-buoy"></ion-icon><br>SPOED!!</div>
+    <div class="box-col" (click)="openMedicijnen()"><ion-icon name="medkit"></ion-icon><br>Mijn medicijnen</div>
+    <div class="box-col" (click)="openSpoed()"><ion-icon name="help-buoy"></ion-icon><br>SPOED!!</div>
   </div>
 </div>
 </ion-content>

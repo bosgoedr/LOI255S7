@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,ModalController } from 'ionic-angular';
-//pages
-import { MenuPage } from './../menu/menu';
 
 /**
  * Generated class for the MedicijnenPage page.
@@ -18,10 +16,6 @@ import { MenuPage } from './../menu/menu';
 export class MedicijnenPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private modal: ModalController) {
-  }
-
-  Menu() {
-    this.navCtrl.push(MenuPage);
   }
 
   ionViewDidLoad() {

@@ -6,24 +6,12 @@
 -->
 <ion-header>
 
-  <ion-navbar hideBackButton="true">
-      <ion-title>
-          <ion-grid style="width: 100%">
-            <ion-row>
-              <ion-col style="text-align: center"><button clear ion-button icon-only (click)="Menu()"><ion-icon name="home"></ion-icon></button></ion-col>
-              <ion-col style="text-align: center"><button clear ion-button icon-only><ion-icon name="help-circle"></ion-icon></button></ion-col>
-              <ion-col style="text-align: center"><button clear ion-button icon-only><ion-icon name="contact"></ion-icon></button></ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-title>
-  </ion-navbar>
-  
-</ion-header>
-
+    <ion-navbar>
+      <ion-title>Spoed</ion-title>
+    </ion-navbar>
+  </ion-header>
 
 <ion-content padding>
-<button ion-button (click)="SpoedClick()">Bel 112</button>
-<button ion-button (click)="SpoedVervolg()">Spoed vervolg</button>
 <div text-center>
   <button ion-button round outline large color="danger" (click)="alertSpoed()">Alarmeer huisarts!!!</button>
 </div>

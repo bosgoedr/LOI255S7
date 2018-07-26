@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-//pages
-import { MenuPage } from './../menu/menu';
 
 /**
  * Generated class for the ChatPage page.
@@ -18,10 +16,6 @@ import { MenuPage } from './../menu/menu';
 export class ChatPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  Menu() {
-    this.navCtrl.push(MenuPage);
   }
 
   ionViewDidLoad() {
